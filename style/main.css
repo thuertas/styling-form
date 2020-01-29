@@ -1,0 +1,68 @@
+/*------------ WEBPAGE SETTINGS ------------*/
+body {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    font-weight: 400;
+}
+
+/*to remove the blue border in Chrome: */
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+/*------------ GRID SETTINGS ------------*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+/***Content of the form***/
+.title {
+    width: 60%;
+    margin: 105px auto 46px auto;
+}
+
+label {
+    color: #aaaaaa;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+label:hover, label::selection, label:focus {
+    color: #232f3e;
+}
+
+.grid-item input::placeholder {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+.grid-item input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #aaaaaa;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    color: #232f3e;
+}
+
+.grid-item input:hover, input::selection, input:focus {
+    border-bottom: 1px solid #f26c4f;
+}
+
+input[type=submit] {
+    width: 120px;
+    height: 36px;
+    background-color: #232f3e;
+    border: 0;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+}

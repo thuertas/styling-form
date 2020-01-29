@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="En"><!--This website doesn't have an active navigation and was only designed for big screens-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <link rel="icon" type="icon" href="images/logo.png"/> <!-- Made the icon with the Ö of ÖZIO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400&display=swap" rel="stylesheet"> <!--Google Fonts-->
+</head>
+<body>
+    <h1 class="title">Sign up.</h1>
+    <form  class="grid-container" method="get" autocomplete="on">
+        <label class="grid-item">
+            Username<br>
+            <input type="text" id="username" placeholder="johnnyapple1234" maxlength="15" required/>
+        </label>
+        <label class="grid-item">
+            Password<br>
+            <input type="password" id="password" placeholder="Must be 8 digits. At least one Capital and Number" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" required/>
+            <!--The patter is to make sure that the password has 8 digits, at leats one number, one lowercase and one uppercase-->
+        </label>
+        <label class="grid-item">
+            First name<br>
+            <input type="name" id="firstName" placeholder="Johnny" maxlength="15" required/>
+        </label>
+        <label class="grid-item">
+            Last name<br>
+            <input type="name" id="lastName" placeholder="Appleseed" maxlength="15" required/>
+        </label>
+        <label class="grid-item">
+            E-mail<br>
+            <input type="email" id="email" placeholder="johnnyapple@apple.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
+            <!--The email input is verified in HTML5 but not all browsers support HTML5 therefore added the pattern to verify the email-->
+            <!--the pattern verifies that the email has any characters, then a @, more characters and then a "." After the "." it would at least have two letters-->
+        </label>
+        <label class="grid-item">
+            Telephone<br>
+            <input type="tel" placeholder="415-485-2343" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            <!--The pattern indicates that the user has to input the number like xxx-xxx-xxxx -->
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
